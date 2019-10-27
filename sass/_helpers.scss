@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(34,193,195);
+  background: linear-gradient(135deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.wrapper {
+  width: 800px;
+  min-height: 100vh;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$color-dark: #555;
+$color-base: #ccc;
+$color-light: #f1f1f1;
+$color-accent: rgb(253,187,45);

@@ -1,0 +1,134 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #22c1c3;
+  background: linear-gradient(135deg, #22c1c3 0%, #fdbb2d 100%);
+}
+
+.wrapper {
+  width: 800px;
+  min-height: 100vh;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  display: block;
+  cursor: pointer;
+}
+.input__box {
+  padding: 4px;
+  height: 50px;
+  width: 150px;
+  position: relative;
+}
+.input__box:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 130px;
+  height: 100%;
+  border: solid 4px #f1f1f1;
+  border-right: none;
+  z-index: 1;
+  background-color: #ccc;
+}
+.input__box:after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 42px;
+  height: 100%;
+  border-radius: 50%;
+  border: solid 4px #f1f1f1;
+  background-color: #ccc;
+}
+.input__figure {
+  display: block;
+  height: 100%;
+  width: 42px;
+  background-color: #f1f1f1;
+  transform: none;
+  transition: all 1s;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 4px rgba(85, 85, 85, 0.3);
+}
+.input__checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  display: block;
+}
+.input__checkbox:focus {
+  outline: none;
+}
+.input__checkbox:checked + .input__box .input__figure {
+  border-radius: 50%;
+  transform: translateX(100px);
+  background-color: #fdbb2d;
+}
+
+/*# sourceMappingURL=index.css.map */
